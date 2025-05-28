@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d1a;
+    color: #e6e6e6;
+  }
+  
+  .navbar {
+    background-color: #1e1e2f;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #4da6ff;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-subnav {
+    /*background-color: #1a1a2b;*/
+    padding: 0.5rem 1rem;
+    
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  
+  .top-subnav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .top-subnav li {
+    color: #4da6ff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .top-subnav li:hover {
+    color: #ffffff;
+  }
+  
+  .slider {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .slide-text {
+    position: relative;
+    max-width: 40%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    color: #ffffff;
+  }
+  
+  .slide-text h2 {
+    font-size: 2rem;
+    color: #4da6ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .slide-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .container {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar {
+    border-radius: 30px;
+    width: 250px;
+    background-color: #121223;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    height: 100%;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 1rem 0;
+    color: #4da6ff;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .book-card {
+    border-radius: 30px;
+    background-color: #1a1a2b;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  .book-card:hover {
+    transform: translateY(-3px);
+  }
+  .book-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .footer {
+    background-color: #1e1e2f;
+    padding: 1rem;
+    text-align: center;
+    color: #cccccc;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .main-content {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .slide-text {
+      max-width: 90%;
+      padding: 1rem;
+    }
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .title-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 1.4rem;
+    font-size: 2rem;
+  }
