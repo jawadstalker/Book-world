@@ -722,5 +722,80 @@
   .bi:hover{
 color: white;
   }
+@media (max-width: 768px) {
+  .new {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-title, .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-logo {
+    height: 80px;
+  }
+
+  .title-content {
+    font-size: 1.4rem;
+    padding: 0.4rem;
+  }
+
+  .scroll-content {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    animation: none;
+  }
+
+  .book-card {
+    width: 150px;
+  }
+
+  .authors-slider {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .author-card {
+    flex: 0 0 70%;
+  }
+
+  .fantasy-slider-section {
+    height: 300px;
+  }
+
+  .slide-caption {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 90%;
+  }
+
+  .top-users-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
   
   
