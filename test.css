@@ -723,56 +723,113 @@
 color: white;
   }
 @media (max-width: 768px) {
-  .new {
+  /* ساختار کلی */
+  .new,
+  .logo-title,
+  .navbar,
+  .top-subnav ul {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .logo-title, .navbar {
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
   }
 
+  .top-subnav ul {
+    gap: 1rem;
+  }
+
   .site-logo {
-    height: 80px;
+    height: 60px;
   }
 
   .title-content {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 0.4rem;
   }
 
+  /* اسلایدر */
+  .slider {
+    height: 250px;
+  }
+
+  .slide-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .slide-text p {
+    font-size: 0.9rem;
+  }
+
+  .slide-text {
+    padding: 0.5rem;
+    max-width: 95%;
+  }
+
+  /* کارت کتاب‌ها */
   .scroll-content {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    animation: none;
+    gap: 0.5rem;
+    padding-left: 0.5rem;
   }
 
   .book-card {
-    width: 150px;
+    width: 140px;
+    padding: 0.5rem;
   }
 
+  .book-card img {
+    height: 180px;
+  }
+
+  .book-card h3 {
+    font-size: 1rem;
+  }
+
+  .book-card p {
+    font-size: 0.8rem;
+  }
+
+  /* بخش نویسنده‌ها */
   .authors-slider {
-    overflow-x: auto;
-    flex-wrap: nowrap;
     gap: 0.5rem;
+    overflow-x: auto;
   }
 
   .author-card {
     flex: 0 0 70%;
+    padding: 0.8rem;
   }
 
+  .author-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .author-card h3 {
+    font-size: 1rem;
+  }
+
+  .author-card p {
+    font-size: 0.8rem;
+  }
+
+  /* اسلایدر فانتزی */
   .fantasy-slider-section {
     height: 300px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .slide-caption {
     font-size: 1rem;
     padding: 0.5rem;
+    max-width: 80%;
   }
 
+  .read-now {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  /* پلن قیمت‌ها */
   .pricing-cards {
     flex-direction: column;
     align-items: center;
@@ -780,22 +837,58 @@ color: white;
 
   .pricing-card {
     width: 90%;
+    padding: 1rem;
   }
 
+  .pricing-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .features-list li {
+    font-size: 0.9rem;
+  }
+
+  .icon-text {
+    font-size: 0.9rem;
+  }
+
+  /* کاربران برتر */
   .top-users-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 
-  .footer-container {
+  .user-card {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .user-card .profile-pic {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+
+  .user-info h4 {
+    font-size: 1rem;
+  }
+
+  .user-info p {
+    font-size: 0.8rem;
+  }
+
+  /* فوتر */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
   }
 
   .footer-left,
   .footer-right {
-    margin: 0.5rem 0;
-    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .contact-item {
+    justify-content: center;
   }
 }
-  
-  
